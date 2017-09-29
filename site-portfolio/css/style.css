@@ -2,6 +2,7 @@ body {
 	max-width: 100%;
 	margin: 0;
 	background-color: #ddd;
+
 }
 
 /*=============================
@@ -42,24 +43,95 @@ body {
 =============================*/
 
 .main-block {
-	background-color: #777;
+	background-color: #111;
 }
 
 .main_photo {
-	max-height: 100%;
-	width: 780px;
+	width: 1900px;
+	height: 400px !important;
+	max-width: none !important;
+	opacity: .5;
 }
 
+.item {
+	background-color: black;
+}
 
+.slider_head {
+	font-size: 30px;
+	text-align: left;
+	font-weight: bold;
+}
+
+.slider_text {
+	text-align: right;
+	font-size: 18px;
+	position: absolute;
+	bottom: 6%;
+	right: 0%;
+}
 /*===============================
 	ABOUT US
 =================================*/
 
 .block-our {
-	border-bottom: 2px solid #111;
+	padding-bottom: 15px;
+	border-bottom: 1px solid #111;
+	margin-bottom: 20px;
 }
 
 .photo_us {
 	float: right;
 	margin: 30px 40px;
+	border-radius: 10px;
+}
+
+/*=======================================
+	Portfolio Block
+=========================================*/
+
+.portfolio-section {
+	margin-top: 10px;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #111;
+	margin-bottom: 5px;
+}
+
+.portfolio-info {
+	background-color: #77d;
+	padding-bottom: 16%;
+}
+
+.portfolio-info::before {
+	content: "";
+	padding-bottom: 100%;
+}
+
+.our-works {
+	background-color: #7d7;
+	padding-top: 30%;
+	border-bottom: 1px solid #00f;
+	border-right: 1px solid #00f;
+	text-align: center;
+}
+
+.our-works::before {
+	content: "";
+	padding-bottom: 100%;
+}
+
+.work-1 {
+	width: 100%;
+}
+
+/*===========================================
+	Feedback
+=============================================*/
+
+.feedback-section {
+	width: 100%;
+	height: 650px;
+	background-image: url(../img/form/For_form.png);
+	background-size: cover;
+	background-repeat: no-repeat;
 }

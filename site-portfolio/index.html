@@ -4,13 +4,11 @@
 	<meta charset="UTF-8">
 	<title>Сайт команды веб-разработчиков</title>
 
-
-	<link rel="stylesheet" href="css/bootstrap.min.css">	
+	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-	
 	<header class="header">
 		<div class="container">
 			<div class="row">
@@ -19,40 +17,125 @@
 				</div>
 			</div>
 		</div>
+		
 	</header>
 
-	<div class="container-fluid">
-		<div class="row">
-			<div class="col-xs-12 col-lg-12 main-block">
-				<img src="img/main/for_activities.png" alt="О нашей деятельности" class="center-block main_photo">
-			</div>
+<section class="main-block">
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-xs-12">
+			<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+		  <!-- Указатели -->
+			  <ol class="carousel-indicators">
+			    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+			    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+			    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+			  </ol>
 
-			<div class="col-xs-12 col-lg-10 col-lg-offset-1 block-our">
+			 <div class="carousel-inner">
+		    	<div class="item active">
+					<img src="img/main/2.jpg" class="main_photo">
+			      	<div class="carousel-caption">
+						<h3 class="slider_head">Мы делаем <br> web-сайты <br> для бизнеса</h3>
+						<p class="slider_text">Мы поможем создать информационную <br>
+								 				площадку, которая переведет Ваш <br>
+												 бизнес на новый уровень <br>
+						</p>
+					</div>
+		    	</div>
+
+				<div class="item">
+					<img src="img/main/1.jpg" class="main_photo">
+		      	<div class="carousel-caption">
+							<h3 class="slider_head">Разработка сайта под ключ</h3>
+							<p class="slider_text"> индивидуальный дизайн <br>
+		 											 наполнение web-сайта информацией <br>
+		 										 							размещение в интернет <br></p>
+						</div>
+		    	</div>
+
+			<div class="item">
+				<img src="img/main/3.jpg" class="main_photo">
+			      <div class="carousel-caption">
+					<h3 class="slider_head">Мы принимаем участие <br>
+											 на всех этапах разработки <br></h3>
+					<p class="slider_text">начиная от разработки дизайн-проекта <br>
+										 заканчивая созданием сайта под ключ <br></p>
+				  </div>
+		    </div>
+		  </div>
+		  <!-- Элементы управления -->
+		  <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+		    <span class="glyphicon glyphicon-chevron-left"></span>
+		  </a>
+		  <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+		    <span class="glyphicon glyphicon-chevron-right"></span>
+		  </a>
+			</div>
+		</div>
+	</div>
+</div>
+</section>
+
+<div class="container">
+	<div class="row block-our">
+		<div class="col-xs-12 col-lg-12">
 				<div class="center-block">
 				<img src="img/about-us/notebook.png" alt="Мы" class="photo_us">
 				<h2>КТО МЫ</h2>
 				<p class="text-primary">Мы-команда молодых Веб-разработчиков ставящих своей целью разрабатывать сайты "под ключ", осуществлять адаптивную верстку и делать высокоэффективные лендинги</p>
 				</div>
-			</div>
-
-			<div></div>
-			<div></div>
-			<div></div>
-
 		</div>
 	</div>
+ 		<div class="row">
+ 			<div class="col-xs-12 col-lg-6 portfolio-info">
+ 				<h2>Наши лучшие работы</h2>
+ 				<p class="text-succes">Здесь представлены наши лучшие работы, если хотите ознакомится с полным списком наших проектов, нажмите на кнопку ниже</p>
+ 				<button class="btn btn-primary">Посмотреть портфолио</button>
+ 			</div>
+ 			<div class="col-xs-12 col-lg-6">
+ 				<a href="https://ilnaz-web.github.io/Lesson5/"><img src="img/our-work/work-1.JPG" alt="Рекламный сайт IPhone" class="work-1"></a>
+ 			</div>
+ 		</div>
+		<div class="row portfolio-section">
+ 			<div class="col-xs-12 col-lg-6">
+ 				<a href="https://ilnaz-web.github.io/lesson6/"><img src="img/our-work/work-2.JPG" alt="Макет для строительной фирмы" class="work-1"></a>
+ 			</div>
+ 			<div class="col-xs-12 col-lg-6">
+ 				<a href="https://ilnaz-web.github.io/lesson%208/"><img src="img/our-work/work-3.JPG" alt="Макет для страницы с подбором шрифтов" class="work-1"></a>
+ 			</div>
+		</div>
+</div>
+	<div class="feeback-block">
+	<div class="feedback-section">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12 col-lg-6 col-lg-offset-3">
+					
+				</div>
+			</div>
+		</div>
+	</div>
+	</div>
+		<div></div>
+		<div></div>
+
+
+
 
 	<footer class="footer">
-		<div class="container">
+		<div class="container-fluid">
 			<div class="row">
 				<div class="col-xs-6 col-md-3 col-lg-3">
 					<h1 class="logo"><span class="logo-first">W</span>STUDIO</h1>
 				</div>
 			</div>
 		</div>
-		
 	</footer>
 
+
+<script src="http://code.jquery.com/jquery-latest.js"></script>
+<script src="js/bootstrap.min.js"></script>
 </body>
 
 </html>
