@@ -1,0 +1,194 @@
+/* Color mixins*/
+
+@dark-color: rgb(32, 34, 66);
+@light-color: rgb(255, 255, 62);
+@line-color: rgba(164,164,164, 0.2);
+@header-text-color: #fff;
+
+/* Basic Settings */
+
+html {
+	font-size: 10px;
+}
+
+body {
+	color: @dark-color;
+}
+
+@font-face {
+			font-family: "RockwellRegular";
+			src: url("../fonts/RockwellRegular/RockwellRegular.eot");
+			src: url("../fonts/RockwellRegular/RockwellRegular.eot?#iefix")format("embedded-opentype"),
+			url("../fonts/RockwellRegular/RockwellRegular.woff") format("woff"),
+			url("../fonts/RockwellRegular/RockwellRegular.ttf") format("truetype");
+			font-style: normal;
+			font-weight: normal;
+	}
+
+@font-face {
+		font-family: "RockwellBoldItalic";
+		src: url("../fonts/RockwellBoldItalic/RockwellBoldItalic.eot");
+		src: url("../fonts/RockwellBoldItalic/RockwellBoldItalic.eot?#iefix")format("embedded-opentype"),
+		url("../fonts/RockwellBoldItalic/RockwellBoldItalic.woff") format("woff"),
+		url("../fonts/RockwellBoldItalic/RockwellBoldItalic.ttf") format("truetype");
+		font-style: normal;
+		font-weight: normal;
+}
+
+.header-font {
+	font-family: 'Rockwell';
+	font-weight: bold;
+}
+.header-font-normal {
+	font-family: 'Rockwell';
+	font-weight: bold;
+}
+/* Fonts mixins */
+
+.reg {
+	font-family: 'Raleway', sans-serif;
+	font-weight: 400;
+}
+.semi {
+	font-family: 'Raleway', sans-serif;
+	font-weight: 600;
+}
+.bold {
+	font-family: 'Raleway', sans-serif;
+	font-weight: 700;
+}
+
+
+/* Header Styles */
+
+header {
+	width: 100%;
+	min-height: 60rem;
+	background-image: url(../img/main-bg.jpg);
+	background-size: cover;
+}
+
+.header {
+	&-top-block {
+		box-shadow: 0 0 10px rgba(0,0,0, .3);
+		height: 11rem;
+		background-color: #fff;
+	}
+	&-logo {
+		height: 11rem;
+		line-height: 11rem;
+		img {
+			vertical-align: middle;
+		}
+		span {
+			.header-font-normal;
+			font-size: 2rem;
+			margin-left: 1rem;
+			vertical-align: middle;
+		}
+	}
+	&-nav {
+		text-align: center;
+		height: 11rem;
+		line-height: 11rem;
+		border-right: 1px solid @line-color;
+		li {
+			a {
+				color: @dark-color;
+				font-size: 1.5rem;
+				.reg;
+				text-transform: uppercase;
+				&:hover {
+					text-decoration: none;
+				}
+			}
+			&.item-active a {
+				color: @light-color;
+				.bold;
+			}
+			display: inline-block;
+			margin: 0  1rem;
+		}
+	}
+	&-callback {
+		text-align: center;
+		&_text {
+			p {
+				font-size: 1.2rem;
+				padding-top: 1rem;
+			}
+		}
+		&_btn {
+			display: inline-block;
+			padding: 1rem 2.5rem;
+			background-color: @light-color;
+			color: @dark-color;
+			margin-right: 2rem;
+			.bold;
+		}
+		&_phone {
+			font-size: 2.3rem;
+			font-weight: bold;
+			padding-left: 2rem;
+			border-left: 2px solid @line-color;
+			color: @dark-color;
+		}
+	}
+	&-text-block {
+		padding-top: 10%;
+		color: @header-text-color;
+		text-align: center;
+		h1 {
+			.header-font-normal;
+			font-size: 4rem;
+			margin-bottom: .2em;
+		}
+		p {
+			font-size: 2rem;
+			.reg;
+		}
+	}
+	&-main-img {
+		margin-top: 2rem;
+	}
+}
+.main {
+	&-form-block {
+		width: 50rem;
+		height: 9rem;
+		margin: 4rem auto;
+		padding-top: 2rem;
+		text-align: center;
+		background-color: fadeout(@header-text-color, 50%);
+	}
+	&-form_input {
+		display: inline-block;
+		background-color: #fff;
+		padding: 0 1rem;
+		height: 5rem;
+		vertical-align: middle;
+		margin-right: -4px;
+		border: none;
+		width: 50%;
+	}
+	&-form_btn {
+		display: inline-block;
+		border: none;
+		background-color: @light-color;
+		color: #fff;
+		height: 5rem;
+		.bold;
+		padding-left: 1rem;
+		padding-right: 1rem;
+	}
+}
+.input-addon {
+	.bold;
+	display: inline-block;
+	background-color: @light-color;
+	height: 5rem;
+	width: 8rem;
+	line-height: 5rem;
+	margin-right: -2px;
+	vertical-align: middle;
+}
