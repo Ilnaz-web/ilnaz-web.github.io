@@ -2,137 +2,203 @@
 <html lang="ru">
 <head>
 	<meta charset="UTF-8">
-	<title>Сайт команды веб-разработчиков</title>
-
-	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<title>Разработка сайтов для бизнеса</title>
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/bootstrap.css">
+
+	<!--Fonts-->
+	<link href="https://fonts.googleapis.com/css?family=Exo+2:400,700&amp;subset=cyrillic" rel="stylesheet">
+
 </head>
 
 <body>
 	<header class="header">
-		<div class="container">
-			<div class="row">
-				<div class="col-xs-6 col-md-3 col-lg-3">
-					<h1 class="logo"><span class="logo-first">W</span>STUDIO</h1>
-				</div>
-			</div>
-		</div>
-		
+		<nav class="navbar navbar-default" role="navigation">
+		  <div class="container-fluid">
+		    <!-- Brand and toggle get grouped for better mobile display -->
+		    <div class="navbar-header">
+				<h1 class="logo"><span class="logo-first">W</span>STUDIO<sup>s</sup></h1>
+		    </div>
+		    <!-- Collect the nav links, forms, and other content for toggling -->
+		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+		      <ul class="nav navbar-nav navbar-right">
+			<li class="menu_item_h"><a class="menu_item" href="#">О нас</a></li>
+			<li class="menu_item_h"><a class="menu_item" href="#">Проекты</a></li>
+			<li class="menu_item_h"><a class="menu_item" href="#">Разработчики</a></li>
+			<li class="menu_item_h"><a class="menu_item" href="#">Контакты</a></li>
+			<li><a class="social" href="#"><img class="social-img" src="img/navbar/vk.png"></a></li>
+			<li><a class="social" href="#"><img class="social-img" src="img/navbar/telegram.png" alt=""></a></li>
+			<li><a class ="social" href="#"><img class="social-img" src="img/navbar/facebook.png" alt=""></a></li>
+		      </ul>
+		    </div>
+		  </div>
+		</nav>
 	</header>
 
-<section class="main-block">
-<div class="container-fluid">
-	<div class="row">
-		<div class="col-xs-12">
-			<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-		  <!-- Указатели -->
-			  <ol class="carousel-indicators">
-			    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-			    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-			    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-			  </ol>
+	<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+		<ol class="carousel-indicators">
+	    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+	    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+	    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+	  	</ol>
 
-			 <div class="carousel-inner">
-		    	<div class="item active">
-					<img src="img/main/2.jpg" class="main_photo">
-			      	<div class="carousel-caption">
-						<h3 class="slider_head">Мы делаем <br> web-сайты <br> для бизнеса</h3>
-						<p class="slider_text">Мы поможем создать информационную <br>
-								 				площадку, которая переведет Ваш <br>
-												 бизнес на новый уровень <br>
-						</p>
-					</div>
-		    	</div>
-
-				<div class="item">
-					<img src="img/main/1.jpg" class="main_photo">
+		 <div class="carousel-inner">
+		    <div class="item active">
+				<img src="img/main/2.jpg" class="main_photo">
 		      	<div class="carousel-caption">
-							<h3 class="slider_head">Разработка сайта под ключ</h3>
-							<p class="slider_text"> индивидуальный дизайн <br>
-		 											 наполнение web-сайта информацией <br>
-		 										 							размещение в интернет <br></p>
-						</div>
-		    	</div>
+					<h3 class="slider_head">Мы делаем <br> web-сайты <br> для бизнеса</h3>
+					<p class="slider_text">Мы поможем создать информационную <br>
+										  площадку, которая переведет Ваш <br>
+											 бизнес на новый уровень <br>
+					</p>
+				</div>
+		    </div>
+
+			<div class="item">
+				<img src="img/main/1.jpg" class="main_photo">
+		      	<div class="carousel-caption">
+					<h3 class="slider_head">Разработка сайта под ключ</h3>
+					<p class="slider_text"> Индивидуальный дизайн <br>
+											наполнение web-сайта информацией <br>
+				 							размещение в интернет <br></p>
+				</div>
+		    </div>
 
 			<div class="item">
 				<img src="img/main/3.jpg" class="main_photo">
-			      <div class="carousel-caption">
-					<h3 class="slider_head">Мы принимаем участие <br>
-											 на всех этапах разработки <br></h3>
-					<p class="slider_text">начиная от разработки дизайн-проекта <br>
-										 заканчивая созданием сайта под ключ <br></p>
-				  </div>
-		    </div>
-		  </div>
-		  <!-- Элементы управления -->
+		      <div class="carousel-caption">
+						<h3 class="slider_head">Мы принимаем участие <br>
+												 на всех этапах разработки <br></h3>
+						<p class="slider_text">Начиная от разработки дизайн-проекта <br>
+											и заканчивая созданием сайта под ключ <br></p>
+					</div>
+			</div>
+		 </div>
+		 <!-- Элементы управления -->
 		  <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
 		    <span class="glyphicon glyphicon-chevron-left"></span>
 		  </a>
 		  <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
 		    <span class="glyphicon glyphicon-chevron-right"></span>
 		  </a>
+	</div>
+
+	<div class="container">
+		<div class="row block-our">
+			<div class="col-xs-12 col-lg-12">
+					<div class="row">
+						<div class="col-xs-12 col-lg-3 col-lg-offset-1">
+							<h2 class="our-h2">О НАС</h2>
+						</div>
+					<div class="row">
+						<div class="col-xs-12 col-lg-12">
+							<img src="img/about-us/notebook.png" alt="Мы" class="photo_us">
+							<p class="our-txt">Мы-команда молодых Веб-разработчиков ставящих своей целью разрабатывать сайты "под ключ", осуществлять адаптивную верстку и делать высокоэффективные лендинги</p>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
-	</div>
-</div>
-</section>
 
-<div class="container">
-	<div class="row block-our">
-		<div class="col-xs-12 col-lg-12">
-				<div class="center-block">
-				<img src="img/about-us/notebook.png" alt="Мы" class="photo_us">
-				<h2>КТО МЫ</h2>
-				<p class="text-primary">Мы-команда молодых Веб-разработчиков ставящих своей целью разрабатывать сайты "под ключ", осуществлять адаптивную верстку и делать высокоэффективные лендинги</p>
+		<div class="row  portfolio-info">
+			<div class="col-xs-12 col-lg-10 col-lg-offset-1">
+				<h2 class="portfolio-h">Наши лучшие работы</h2>
+			</div>
+			<div class="col-xs-12 col-lg-12">
+				<p class="portfolio-text">Здесь представлены наши лучшие работы, если хотите ознакомится с полным списком наших проектов, нажмите на кнопку ниже</p>
+			</div>
+			<div class="row">
+				<div class="col-xs-12 col-lg-3 col-lg-offset-2">
+					<button class="btn btn-primary btn-lg portfolio-btn">Посмотреть портфолио</button>
 				</div>
+			</div>
 		</div>
-	</div>
- 		<div class="row">
- 			<div class="col-xs-12 col-lg-6 portfolio-info">
- 				<h2>Наши лучшие работы</h2>
- 				<p class="text-succes">Здесь представлены наши лучшие работы, если хотите ознакомится с полным списком наших проектов, нажмите на кнопку ниже</p>
- 				<button class="btn btn-primary">Посмотреть портфолио</button>
- 			</div>
- 			<div class="col-xs-12 col-lg-6">
- 				<a href="https://ilnaz-web.github.io/Lesson5/"><img src="img/our-work/work-1.JPG" alt="Рекламный сайт IPhone" class="work-1"></a>
- 			</div>
- 		</div>
 		<div class="row portfolio-section">
- 			<div class="col-xs-12 col-lg-6">
+			<div class="col-xs-12 col-lg-4">
+				<a href="https://ilnaz-web.github.io/Lesson5/"><img src="img/our-work/work-1.JPG" alt="Рекламный сайт IPhone" class="work-1"></a>
+			</div>
+ 			<div class="col-xs-12 col-lg-4">
  				<a href="https://ilnaz-web.github.io/lesson6/"><img src="img/our-work/work-2.JPG" alt="Макет для строительной фирмы" class="work-1"></a>
  			</div>
- 			<div class="col-xs-12 col-lg-6">
+ 			<div class="col-xs-12 col-lg-4">
  				<a href="https://ilnaz-web.github.io/lesson%208/"><img src="img/our-work/work-3.JPG" alt="Макет для страницы с подбором шрифтов" class="work-1"></a>
  			</div>
 		</div>
-</div>
+	</div>
+
 	<div class="feeback-block">
-	<div class="feedback-section">
-		<div class="container">
-			<div class="row">
-				<div class="col-xs-12 col-lg-6 col-lg-offset-3">
-					
+		<div class="feedback-section">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12 col-lg-6 col-lg-offset-3">
+						<h2 class="feedback-h2">Хотите связаться с нами?</h2>
+						<p class="feedback-txt">Заполните форму обратной связи и мы вам обязательно напишем</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-12 col-lg-6 col-lg-offset-3">
+						<form action="">
+							<div class="form-group">
+								<input type="text" id="name" class="form-control" placeholder="Введите ваше имя">
+							</div>
+							<div class="form-group">
+								<input type="email" id="e-mail" class="form-control" placeholder="Введите ваш e-mail">
+							</div>
+							<div class="form-group">
+								<textarea name="textarea-block" class="form-control textarea-block" id="txt-block" cols="76" rows="12" placeholder="Общее описание вашего заказа"></textarea>
+							</div>
+							<button type="submit" class="btn btn-lg center-block my-btn">Отправить</button>
+						</form>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-12 col-lg-6 col-lg-offset-3">
+						<p class="feedback-txt fb-txt-2"> </p>
+						<div class="center-block">
+						<ul class="feedback-ul">
+							<li class="feedback-li"><a class="social-footer" href="#"><img class="social-img" src="img/navbar/vk.png"></a></li>
+							<li class="feedback-li"><a class="social-footer" href="#"><img class="social-img" src="img/navbar/telegram.png" alt=""></a></li>
+							<li class="feedback-li"><a class ="social-footer" href="#"><img class="social-img" src="img/navbar/facebook.png" alt=""></a></li>
+							<li class="feedback-li feedback-li_contact"><span class="glyphicon glyphicon-earphone" aria-hidden="true"></span> 8-800-555-35-35</li>
+							<li class="feedback-li feedback-li_contact"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> wstudio@gmail.com</li>
+						</ul>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
-	</div>
 	</div>
 		<div></div>
 		<div></div>
 
 
 
+</div>
 
-	<footer class="footer">
-		<div class="container-fluid">
-			<div class="row">
-				<div class="col-xs-6 col-md-3 col-lg-3">
-					<h1 class="logo"><span class="logo-first">W</span>STUDIO</h1>
-				</div>
-			</div>
+<footer class="footer">
+	<div class="container">
+		<p class="name">2017 WEB STUDIO</p>
+		<div class="left-footer">
+			<p>Россия г.Казань</p>
+			<a class="menu_item" href="#">О нас /</a>
+			<a class="menu_item" href="#">Проекты /</a>
+			<a class="menu_item" href="#">Разработчики /</a>
+			<a class="menu_item" href="#">Контакты</a>
+		</div><!--
+		--><div class="right-footer">
+			<p class="right-footer_p">Телефон + (843) 222-22-22</p>
+			<p class="right-footer_p">Email: wstudio@gmail.com</p>
+			<p class="social_p">
+				<a class="social-footer" href="#"><img class="social-img" src="img/navbar/vk.png"></a>
+				<a class="social-footer" href="#"><img class="social-img" src="img/navbar/telegram.png" alt=""></a>
+				<a class ="social-footer" href="#"><img class="social-img" src="img/navbar/facebook.png" alt=""></a>
+			</p>
 		</div>
-	</footer>
 
+
+	</div>
+</footer>
 
 <script src="http://code.jquery.com/jquery-latest.js"></script>
 <script src="js/bootstrap.min.js"></script>

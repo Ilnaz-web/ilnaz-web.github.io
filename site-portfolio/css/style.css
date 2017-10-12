@@ -1,8 +1,7 @@
 body {
-	max-width: 100%;
-	margin: 0;
+	font-family: 'Exo 2', sans-serif;
+	font-weight: 400;
 	background-color: #ddd;
-
 }
 
 /*=============================
@@ -10,32 +9,93 @@ body {
 =============================*/
 
 .header {
-	background-color: #000;
-	height: 120px;
-	max-width: 100%;
-	color: white;
-	padding-top: 0;
-	margin-top: 0;
+ 	background-color: #000;
+ 	height: 80px;
+ 	max-width: 100%;
 }
 
 .footer {
 	max-width: 100%;
-	height: 200px;
+	height: 140px;
 	background-color: #000;
 	color: white;
 }
 
-
 .logo {
-	display: inline-block;
 	font-size: 2.3em;
+	margin-left: 25%;
+	font-weight: bold;
+	color: #33d;
 	vertical-align: middle;
-	margin-left: 70px;
-	//border: 1px solid white;
-} 
+	//margin-top: 11%;
+}
 
 .logo-first {
+	color: white;
+}
+
+.navbar-collapse {
+	background-color: black;
+	padding-top: 0.5%;
+}
+
+.container-fluid {
+	padding: 0px 0px 0px 0px !important;
+}
+
+.navbar-right {
+	margin-right: 1.5% !important;
+	vertical-align: middle;
+}
+
+.menu_item {
+	color: white !important;
+	}
+
+.menu_item_h:hover {
+	background-color: #1d1d1d;
+}
+
+.navbar {
+	margin-bottom: 0px !important;
+	border: none !important;
+}
+
+.social {
+	padding: 12px 10px !important;
+}
+
+.social-img {
+	height: 25px;
+}
+
+.social_p {
+	float: right;
+}
+
+.name {
+	font-weight: bold;
+	font-size: 16px;
+	margin-top: 10px;
 	color: #33d;
+}
+
+.left-footer {
+	display: inline-block;
+	float: left;
+}
+.right-footer {
+	//text-align: right;
+	display: inline-block;
+	float: right;
+}
+
+.right-footer_p {
+	text-align: right;
+}
+
+.social-footer {
+	padding-left: 10px  !important;
 }
 
 /*===========================
@@ -45,6 +105,13 @@ body {
 .main-block {
 	background-color: #111;
 }
+
+.block-our {
+	border-bottom: 2px solid #111;
+	padding-bottom: 15px;
+	border-bottom: 1px solid #111;
+	margin-bottom: 20px;
+ }
 
 .main_photo {
 	width: 1900px;
@@ -61,6 +128,9 @@ body {
 	font-size: 30px;
 	text-align: left;
 	font-weight: bold;
+	position: absolute;
+	top: 0%;
+	left: 0%;
 }
 
 .slider_text {
@@ -70,26 +140,33 @@ body {
 	bottom: 6%;
 	right: 0%;
 }
+
+.carousel-caption {
+	position: absolute;
+	top: 0%;
+	min-height: 100%;
+}
 /*===============================
 	ABOUT US
 =================================*/
+ .photo_us {
+ 	float: right;
+ }
 
-.block-our {
-	padding-bottom: 15px;
-	border-bottom: 1px solid #111;
-	margin-bottom: 20px;
-}
+ .our-h2 {
+ 	font-family: 'Exo 2', sans-serif;
+ 	font-weight: 700;
+ }
 
-.photo_us {
-	float: right;
-	margin: 30px 40px;
-	border-radius: 10px;
-}
+ .our-txt {
+ 	font-family: 'Exo 2', sans-serif;
+ 	font-weight: 400;
+ 	font-size: 2rem;
+ }
 
 /*=======================================
 	Portfolio Block
 =========================================*/
-
 .portfolio-section {
 	margin-top: 10px;
 	padding-bottom: 10px;
@@ -98,30 +175,23 @@ body {
 }
 
 .portfolio-info {
-	background-color: #77d;
-	padding-bottom: 16%;
+	background-color: #fff;
+	padding-bottom: 3rem;
+	font-family: 'Exo 2', sans-serif;
 }
 
-.portfolio-info::before {
-	content: "";
-	padding-bottom: 100%;
+.portfolio-h {
+	font-weight: 700;
 }
 
-.our-works {
-	background-color: #7d7;
-	padding-top: 30%;
-	border-bottom: 1px solid #00f;
-	border-right: 1px solid #00f;
-	text-align: center;
-}
-
-.our-works::before {
-	content: "";
-	padding-bottom: 100%;
+.portfolio-text {
+	font-size: 2rem;
 }
 
 .work-1 {
 	width: 100%;
+	border: 1px solid blue;
+	height: 25rem;
 }
 
 /*===========================================
@@ -130,8 +200,71 @@ body {
 
 .feedback-section {
 	width: 100%;
-	height: 650px;
+	height: 700px;
 	background-image: url(../img/form/For_form.png);
 	background-size: cover;
 	background-repeat: no-repeat;
+}
+
+.feedback-h2 {
+	color: #fff;
+	text-align: center;
+}
+
+.feedback-txt {
+	color: #eee;
+	text-align: center;
+	font-size: 1.2em;
+}
+
+.fb-txt-2 {
+	padding-top: 15px;
+	font-size: 1.4em;
+}
+
+.label-txt {
+	color: #f55;
+}
+
+.my-btn {
+	background-color: #111;
+	color: #fff;
+}
+
+.feedback-ul {
+	padding-left: 0;
+	text-align: center;
+}
+
+.feedback-ul li::before {
+	margin: 0 5px;
+}
+
+.feedback-ul li:first-child::before {
+	content: '';
+	margin-left: 0;
+}
+
+.feedback-li {
+	display: inline;
+	color: #fff;
+	margin: 0;
+	font-size: 1.2em;
+}
+
+.feedback-li_contact::before {
+	content: '|';
+}
+
+.textarea-block {
+	border-radius: 5px;
+	padding: 10px;
+}
+
+.social-a {
+	color: #fff;
+}
+
+.youtube-img {
+	width: 15px;
 }
