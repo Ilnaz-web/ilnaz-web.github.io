@@ -1,6 +1,7 @@
 
 body {
 	background-color: rgba(200,200,0, 0.3);
+	position: relative;
 }
 
 .box-photo {
@@ -15,6 +16,11 @@ body {
 		color: white;
 		opacity: 0;
 		transition: all 0.7s;
+		a {
+			display: block;
+			color: white;
+			text-decoration: none;
+		}
 		&:hover {
 			opacity: 1;
 		}
@@ -37,3 +43,36 @@ body {
 	background-image: url(../img/photo4.png);
 	background-size: cover;
 }
+.popup {
+	width: 30%;
+	height: 400px;
+	position: fixed;
+	top: 15%;
+	left: 35%;
+	background-image: linear-gradient(rgba(0,0,0, 0.5), rgba(0,0,0, 0.2)), url(../img/modal-photo.png);
+	background-size: cover;
+	display: none;	
+	&:target {
+		display: block;
+		
+	}
+	&-text {
+		text-align: center;
+		padding-top: 35%;
+		color: yellow;
+	}
+	&-close {
+		position: absolute;
+		top: 0.5rem;
+		right: 1rem;
+		text-decoration: none;
+		font-size: 3rem;
+		color: red;
+		&:hover {
+			text-decoration: none;
+			color: #fbb;
+		}
+	}
+}
+
+
