@@ -1,0 +1,138 @@
+@font-face {
+  font-family: 'P22 Underground CY Pro';
+  src: url("../fonts/P22/P22UndergroundCYPro-Book.otf");
+  src: url("../fonts/P22/P22UndergroundCYPro-Book.eot?#iefix") format('embedded-opentype'), url("../fonts/P22/P22UndergroundCYPro-Book.woff") format('woff'), url("../fonts/P22/P22UndergroundCYPro-Book.ttf") format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  margin: 0;
+}
+
+.header {
+  padding-top: 4rem;
+  background: url("../img/main-bg.jpg") no-repeat center center;
+  background-size: cover;
+  height: 65rem;
+  color: #fff;
+}
+
+.header-logo {
+  margin-right: 0.5rem;
+}
+
+.header-text {
+  font-family: 'P22 Underground CY Pro';
+  padding-left: 2rem;
+  text-align: left;
+}
+
+.header-btn {
+  font-family: 'P22 Underground CY Pro';
+  background: none;
+  border: 1px solid #fff;
+  padding: 1rem 1.5rem;
+  margin-top: 0rem;
+  margin-bottom: 0.5rem;
+}
+
+.header-btn:hover {
+  color: #5c5b5b;
+  border: 2px solid #ffff33;
+}
+
+.header-phone {
+  font-size: 2.4rem;
+  color: #fff;
+  font-family: 'P22 Underground CY Pro';
+}
+
+.header-caption {
+  color: #ffff33;
+  font-family: 'P22 Underground CY Pro';
+  padding-top: 4rem;
+  text-transform: uppercase;
+  font-weight: 800;
+}
+
+.header-list {
+  list-style-type: none;
+  padding-top: 7rem;
+  padding-left: 0rem;
+}
+
+.header-item {
+  padding: 0.5rem;
+  font-family: 'P22 Underground CY Pro';
+  font-size: 1.7rem;
+}
+
+.header-form {
+  font-family: 'P22 Underground CY Pro';
+  width: 32rem;
+  height: 31rem;
+  background-color: #fff;
+  color: #4e4e4e;
+  border-radius: 0.3rem;
+  padding: 3rem;
+  margin-top: 4rem;
+}
+
+.header-form_btn {
+  background: #ffff33;
+  padding: 1.3rem 4.3rem;
+  border-bottom: 3px solid #999900;
+}
+
+.header-form_btn:hover {
+  border-bottom: 2px solid #ffff33;
+  border-top: 2px solid #fff;
+}
+
+.header-money {
+  width: 20rem;
+  padding: 0;
+  margin: 0;
+  position: relative;
+  bottom: 4rem;
+  right: 4rem;
+}
+
+.control-label {
+  background: #4e4e4e;
+  width: 4rem;
+  height: 4rem;
+  padding: 1.3rem;
+  border-radius: 0.3rem;
+  position: relative;
+  left: 1.6rem;
+  top: 0.1rem;
+}
+
+.fa-user-o,
+.fa-phone {
+  padding-top: 0.5rem;
+}
+
+.form-control {
+  padding: 2rem;
+  margin: 0;
+}
+
+.conditions {
+  padding-top: 8rem;
+  font-family: 'P22 Underground CY Pro';
+}
+
+.conditions-icon {
+  padding: 1rem;
+}
+
+.conditions-logo {
+  width: 8rem;
+}
