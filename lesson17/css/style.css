@@ -1,0 +1,47 @@
+html {
+  font-size: 14px;
+}
+
+body {
+  background: url("../img/bg-img.jpg") repeat-y;
+  background-size: cover;
+  background-attachment: fixed;
+  color: #0bbaf0;
+}
+
+.main-h {
+  font-weight: bold;
+  margin-bottom: 0.7rem;
+}
+
+h3 {
+  margin-top: 0;
+  margin-bottom: 3rem;
+}
+
+.accordeon .tab {
+  display: block;
+  background-color: #0bbaf0;
+  color: #fff;
+  width: 100%;
+  height: 3rem;
+  padding-top: 0.5rem;
+  font-size: 1.45rem;
+  margin-top: 0.2rem;
+}
+
+.accordeon .tab:hover {
+  text-decoration: none;
+}
+
+.accordeon .content {
+  display: none;
+  border: 4px solid #dcdcdc;
+  border-top: 0;
+  padding: 1rem 1rem;
+}
+
+.accordeon .content p {
+  font-size: 1.375rem;
+  color: #535353;
+}
