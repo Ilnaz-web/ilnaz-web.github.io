@@ -175,7 +175,6 @@ body {
 }
 
 .portfolio-info {
-	background-color: #fff;
 	padding-bottom: 3rem;
 	font-family: 'Exo 2', sans-serif;
 }
@@ -188,11 +187,59 @@ body {
 	font-size: 2rem;
 }
 
-.work-1 {
-	width: 100%;
-	border: 1px solid blue;
-	height: 25rem;
+.works {
+	max-width: 100%;
+	border-radius: 3px;
 }
+
+.works a {
+	color: white;
+	text-decoration: none;
+	font-size: 1.7rem;
+}
+
+.work_1 {
+	background-image: url(../img/our-work/work-1.JPG);
+	background-size: cover;
+}
+.work_2 {
+	background-image: url(../img/our-work/work-3.JPG);
+	background-size: cover;
+	background-position: 50% 0%;
+}
+.work_3 {
+	background-image: url(../img/our-work/work-4.JPG);
+	background-size: cover;
+	background-position: 50% 0%;
+}
+
+.work_a {
+	display: block;
+	width: 100%;
+	height: 25rem;
+	border-radius: 3px;
+	text-align: center;
+	background-color: rgba(0, 0, 0, 0.7);
+	padding-top: 5%;
+	opacity: 0;
+  	transition: all 0.7s;
+}
+.work_a:hover {
+	opacity: 1;
+}
+
+.work_name {
+	font-size: 2rem;
+	font-weight: bold;
+	color: yellow;
+}
+
+.portfolio-section_detail {
+	height: 60rem;
+	background-color: blue;
+	margin-bottom: 5rem;
+}
+
 
 /*===========================================
 	Feedback
