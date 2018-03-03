@@ -3,8 +3,10 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Разработка сайтов для бизнеса</title>
-	<link rel="stylesheet" href="css/style.css">
+	
 	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="css/style.css">
 
 	<!--Fonts-->
 	<link href="https://fonts.googleapis.com/css?family=Exo+2:400,700&amp;subset=cyrillic" rel="stylesheet">
@@ -89,12 +91,12 @@
 			<div class="col-xs-12 col-lg-12">
 					<div class="row">
 						<div class="col-xs-12 col-lg-3 col-lg-offset-1">
-							<h2 class="our-h2">О НАС</h2>
+							<h2 class="our-h2 wow fadeInLeft" data-wow-delay="0.3s">О НАС</h2>
 						</div>
 					<div class="row">
 						<div class="col-xs-12 col-lg-12">
 							<img src="img/about-us/notebook.png" alt="Мы" class="photo_us">
-							<p class="our-txt">Мы-команда молодых Веб-разработчиков ставящих своей целью разрабатывать сайты "под ключ", осуществлять адаптивную верстку и делать высокоэффективные лендинги</p>
+							<p class="our-txt wow fadeInLeft" data-wow-delay="0.5s">Мы-команда молодых Веб-разработчиков ставящих своей целью разрабатывать сайты "под ключ", осуществлять адаптивную верстку и делать высокоэффективные лендинги</p>
 						</div>
 					</div>
 				</div>
@@ -110,20 +112,34 @@
 			</div>
 			<div class="row">
 				<div class="col-xs-12 col-lg-3 col-lg-offset-2">
-					<button class="btn btn-primary btn-lg portfolio-btn">Посмотреть портфолио</button>
+					<a href="https://github.com/Ilnaz-web/ilnaz-web.github.io" class="btn btn-primary btn-lg portfolio-btn">Посмотреть портфолио</a>
 				</div>
 			</div>
 		</div>
 		<div class="row portfolio-section">
 			<div class="col-xs-12 col-lg-4">
-				<a href="https://ilnaz-web.github.io/Lesson5/"><img src="img/our-work/work-1.JPG" alt="Рекламный сайт IPhone" class="work-1"></a>
+				<div class="works work_1">
+					<a href="#collapseWork1" class="work_a" data-toggle="collapse" aria-expanded="false" aria-controls="collapseExample"><span class="work_name">Portland</span><br><br>Рекламный сайт<br><br>Кликните, чтобы узнать подробнее</a>
+				</div>
 			</div>
- 			<div class="col-xs-12 col-lg-4">
+ 			<!-- <div class="col-xs-12 col-lg-3 works">
  				<a href="https://ilnaz-web.github.io/lesson6/"><img src="img/our-work/work-2.JPG" alt="Макет для строительной фирмы" class="work-1"></a>
+ 			</div> -->
+ 			<div class="col-xs-12 col-lg-4">
+ 				<div class="works work_2">
+	 				<a href="https://ilnaz-web.github.io/lesson10/" class="work_a"><span class="work_name">Working Process</span><br><br>Верстка из PSD-макета<br><br>Кликните, чтобы узнать подробнее</a>
+	 			</div>
  			</div>
  			<div class="col-xs-12 col-lg-4">
- 				<a href="https://ilnaz-web.github.io/lesson%208/"><img src="img/our-work/work-3.JPG" alt="Макет для страницы с подбором шрифтов" class="work-1"></a>
+ 				<div class="works work_3">
+	 				<a href="https://ilnaz-web.github.io/lesson13/" class="work_a"><span class="work_name">Beam Light</span><br><br>Верстка из PSD-макета<br><br>Кликните, чтобы узнать подробнее</a>
+	 			</div>
  			</div>
+		</div>
+		<div class="row portfolio-section_detail collapse" id="collapseWork1">
+			<div class="col-xs-12 col-lg-8 col-lg-offset-2">
+				
+			</div>
 		</div>
 	</div>
 
@@ -202,6 +218,11 @@
 
 <script src="http://code.jquery.com/jquery-latest.js"></script>
 <script src="js/bootstrap.min.js"></script>
+<script src="js/wow.min.js"></script>
+    <script>
+    	new WOW().init();
+    </script>
+
 </body>
 
 </html>
