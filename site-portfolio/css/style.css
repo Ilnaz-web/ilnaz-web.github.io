@@ -27,7 +27,7 @@ body {
 	font-weight: bold;
 	color: #33d;
 	vertical-align: middle;
-	//margin-top: 11%;
+	/*margin-top: 11%;*/
 }
 
 .logo-first {
@@ -85,7 +85,7 @@ body {
 	float: left;
 }
 .right-footer {
-	//text-align: right;
+	text-align: right;
 	display: inline-block;
 	float: right;
 }
@@ -175,7 +175,7 @@ body {
 }
 
 .portfolio-info {
-	padding-bottom: 3rem;
+	padding-bottom: 2rem;
 	font-family: 'Exo 2', sans-serif;
 }
 
@@ -190,6 +190,8 @@ body {
 .works {
 	max-width: 100%;
 	border-radius: 3px;
+	margin-top: 10px;
+	margin-bottom: 15px;
 }
 
 .works a {
@@ -203,12 +205,28 @@ body {
 	background-size: cover;
 }
 .work_2 {
-	background-image: url(../img/our-work/work-3.JPG);
+	background-image: url(../img/our-work/work-2.JPG);
 	background-size: cover;
 	background-position: 50% 0%;
 }
 .work_3 {
+	background-image: url(../img/our-work/work-3.JPG);
+	background-size: cover;
+	background-position: 50% 0%;
+}
+.work_4 {
 	background-image: url(../img/our-work/work-4.JPG);
+	background-size: cover;
+}
+
+.work_5 {
+	background-image: url(../img/our-work/work-5.JPG);
+	background-size: cover;
+	background-position: 50% 0%;
+}
+
+.work_6 {
+	background-image: url(../img/our-work/work-6.JPG);
 	background-size: cover;
 	background-position: 50% 0%;
 }
